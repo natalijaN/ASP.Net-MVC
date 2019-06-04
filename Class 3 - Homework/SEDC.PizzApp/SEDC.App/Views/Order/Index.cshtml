@@ -1,0 +1,35 @@
+﻿@model SEDC.App.Models.ViewModels.OrderViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Orders</title>
+</head>
+<body>
+    <h1>@ViewData["Title"]</h1>
+        <p>This is the orders page!</p>
+        <h3>Our first Pizza ever to be delivered was:</h3>
+        <p>@Model.FirstPizza</p>
+        <h3>Our first customer is:</h3>
+        <p>@Model.FirstPersonName</p>
+        <h3>Total orders since we started delivering:</h3>
+        <p>@Model.NumberOfOrders</p>
+
+    @foreach (var order in Model.NewOrder)
+    {
+        <h4>User name: @order.User.FirstName @order.User.LastName</h4>
+        <div>Pizza: @order.Pizza.Name</div>
+        <div>Price: @order.Pizza.Price</div>
+        <br />
+        
+    }
+
+
+</body>
+</html>
