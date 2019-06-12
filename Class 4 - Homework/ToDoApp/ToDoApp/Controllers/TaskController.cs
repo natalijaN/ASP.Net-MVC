@@ -5,12 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ToDoApp.Models.DomainModels;
 using ToDoApp.Models.ViewModels;
+using ToDoApp.Models.Enums;
 
 namespace ToDoApp.Controllers
 {
     public class TaskController : Controller
     {
-        private List<User> _users = new List<User>();
+
+        private User _John { get; set; }
+
         public TaskController()
         {
 
@@ -20,24 +23,14 @@ namespace ToDoApp.Controllers
                 LastName = "Doe",
                 AverageFreeTime = 5
 
-            };
-
-            User will = new User()
-            {
-                FirstName = "Will",
-                LastName = "Smith",
-                AverageFreeTime = 3
-            };
-
-            _users.Add(john);
-            _users.Add(will);
+            };   
 
             ToDo basketball = new ToDo()
             {
                 Title = "Basketball Training",
-                ImporanceOfTask = ImporanceOfTask.Medium,
+                ImporanceOfTask = ImportanceOfTask.Medium,
                 Status = Status.InProgress,
-                Type = Models.DomainModels.Type.Hobby,
+                Type = TypeOfToDo.Hobby,
             };
 
             SubTask workout = new SubTask()
@@ -60,9 +53,9 @@ namespace ToDoApp.Controllers
             ToDo project = new ToDo()
             {
                 Title = "Project",
-                ImporanceOfTask = ImporanceOfTask.Important,
+                ImporanceOfTask = ImportanceOfTask.Important,
                 Status = Status.NotDone,
-                Type = Models.DomainModels.Type.Work,
+                Type = TypeOfToDo.Work,
             };
 
             SubTask analyze = new SubTask()
@@ -86,9 +79,9 @@ namespace ToDoApp.Controllers
             ToDo readABook = new ToDo()
             {
                 Title = "Reading Book",
-                ImporanceOfTask = ImporanceOfTask.Important,
+                ImporanceOfTask =ImportanceOfTask.Important,
                 Status = Status.Done,
-                Type = Models.DomainModels.Type.Personal,
+                Type = TypeOfToDo.Personal,
             };
 
             SubTask  goToLibrary= new SubTask()
@@ -111,12 +104,12 @@ namespace ToDoApp.Controllers
             john.ToDos.Add(project);
             john.ToDos.Add(readABook);
 
+            _John = john;
         }
 
         public IActionResult NotDoneTasks()
         {
-            var notDoneTasks = _users.FirstOrDefault(u => u.FirstName == "John")
-                .ToDos.Where(t => t.Status == Status.NotDone).ToList();
+            var notDoneTasks = _John.ToDos.Where(t => t.Status == Status.NotDone).ToList();
 
             NotDone notDone = new NotDone()
             {
@@ -127,8 +120,7 @@ namespace ToDoApp.Controllers
 
         public IActionResult InProgressTasks()
         {
-            var inProgressTasks = _users.FirstOrDefault(u => u.FirstName == "John")
-                .ToDos.Where(t => t.Status == Status.InProgress).ToList();
+            var inProgressTasks = _John.ToDos.Where(t => t.Status == Status.InProgress).ToList();
 
             InProgress inProgress = new InProgress()
             {
@@ -139,8 +131,7 @@ namespace ToDoApp.Controllers
 
         public IActionResult DoneTasks()
         {
-            var doneTasks = _users.FirstOrDefault(u => u.FirstName == "John")
-                .ToDos.Where(t => t.Status == Status.Done).ToList();
+            var doneTasks = _John.ToDos.Where(t => t.Status == Status.Done).ToList();
 
             Done doneTodos = new Done()
             {
@@ -152,9 +143,7 @@ namespace ToDoApp.Controllers
   
         public IActionResult UserStatistic()
         {
-            var NewUser = _users.FirstOrDefault(u => u.FirstName == "John");
-          
-            return View(NewUser);
+            return View(_John);
         }
     }
 }

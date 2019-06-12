@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #555;
 }
 
 nav li {
@@ -19,17 +19,18 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #111;
-
+    background-color: #242424;
 }
 
 footer {
-    border-top: 2px solid black;
+    margin-top: 0;
+    padding-bottom: 0;
+    border-top: 2px solid #555;
 }
 
-table {
+table,
+table tr,
+table tr td,
+table thead th {
     border: 1px solid black;
 }
-
-
-

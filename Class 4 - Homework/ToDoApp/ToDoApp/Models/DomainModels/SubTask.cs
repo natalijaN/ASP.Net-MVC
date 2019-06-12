@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ToDoApp.Models.Enums;
 
 namespace ToDoApp.Models.DomainModels
 {
-    public enum SubStatus
-    {
-        Done,
-        NotDone
-    }
-
     public class SubTask
     {
         public int Id { get; set; }

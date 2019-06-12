@@ -4,11 +4,46 @@
 }
 <h1>InProgress Tasks</h1>
 
-@foreach (var todo in Model.InProgressTodos)
-{
-    <p>Title: @todo.Title</p>
-    <p>Description: @todo.Descrition</p>
-    <p>Importance Of ToDo: @todo.ImporanceOfTask</p>
-    <p>Type Of ToDo: @todo.Type</p>
-}
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Importance Of ToDo</th>
+            <th>Type Of ToDo</th>
+            <th>SubTask`s</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+
+            @foreach (var todo in Model.InProgressTodos)
+            {
+                <td>@todo.Title</td>
+                <td>@todo.Descrition</td>
+                <td>@todo.ImporanceOfTask</td>
+                <td>@todo.Type</td>
+                <td>
+                    <table>
+                        <tr>
+                            @foreach (var subTodo in todo.SubTasks)
+                            {
+                                <td><b>Title:</b> @subTodo.Title</td>
+                                <td><b>Description:</b> @subTodo.Descrition</td>
+                                <td><b>Status of SubToDo:</b> @subTodo.SubStatus</td>
+                                <tr></tr>
+                            }
+                         </tr>
+
+                    </table>
+                 </td>
+             }
+            </tr>
+            </tbody>
+            </table>
+
+            @if (Model.InProgressTodos.Count() == 0)
+            {
+                <td>Congradulation! All todo`s are done!</td>
+            }
 
