@@ -16,7 +16,13 @@ namespace ToDoApp.Models.ViewModels
         public ImporanceOfTask ImporanceOfTask { get; set; }
         [Display(Name = "Type Of Task")]
         public Type Type { get; set; }
-        
+
         //Add SubTask
+        [Display(Name = "Title of Subtask")]
+        public string SubTaskTitle { get; set; }
+        [Display(Name = "Description of Subtask")]
+        public string SubTaskDescrition { get; set; }
+        [Display(Name = "Subtask status")]
+        public SubStatus SubStatus { get; set; }
     }
 }

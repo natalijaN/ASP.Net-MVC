@@ -19,7 +19,16 @@
     @Html.DropDownListFor(x => x.ImporanceOfTask, Html.GetEnumSelectList(Model.ImporanceOfTask.GetType()))<br />
 
     @Html.LabelFor(x => x.Type)
-    @Html.DropDownListFor(x => x.Type, Html.GetEnumSelectList(Model.Type.GetType()))
+    @Html.DropDownListFor(x => x.Type, Html.GetEnumSelectList(Model.Type.GetType()))<br />
+
+    @Html.LabelFor(x => x.SubTaskTitle)
+    @Html.TextBoxFor(x => x.SubTaskTitle)<br />
+
+    @Html.LabelFor(x => x.SubTaskDescrition)
+    @Html.TextBoxFor(x => x.SubTaskDescrition)<br />
+
+    @Html.LabelFor(x => x.SubStatus)
+    @Html.DropDownListFor(x => x.SubStatus, Html.GetEnumSelectList(Model.SubStatus.GetType()))<br />
 
     <br /><br />
     <button type="submit"> Add task </button>

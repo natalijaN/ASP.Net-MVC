@@ -13,7 +13,6 @@ namespace ToDoApp.Controllers
 
         public IActionResult NotDoneTasks()
         {
-
             var notDoneTasks = Db.Users.FirstOrDefault(u => u.FirstName == "John")
                 .ToDos.Where(t => t.Status == Status.NotDone).ToList();
 
@@ -69,6 +68,8 @@ namespace ToDoApp.Controllers
         {
 
             Db.ToDoId++;
+            Db.SubTaskId++;
+
             ToDo todo = new ToDo()
             {
                 Id = Db.ToDoId,
@@ -77,11 +78,21 @@ namespace ToDoApp.Controllers
                 ImporanceOfTask = model.ImporanceOfTask,
                 Status = Status.NotDone,
                 Type = model.Type,
-                SubTasks = null
+           
             };
 
+            SubTask subtask = new SubTask()
+            {
+                Id = Db.SubTaskId,
+                Title = model.SubTaskTitle,
+                Descrition = model.SubTaskDescrition,
+                SubStatus = model.SubStatus
+            };
+
+            todo.SubTasks.Add(subtask);
+
             Db.Users.FirstOrDefault(u => u.FirstName == "John").ToDos.Add(todo);
-            
+
             return View("_AddedTask");
         }
 

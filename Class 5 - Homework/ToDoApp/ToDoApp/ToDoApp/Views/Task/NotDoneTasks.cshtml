@@ -2,9 +2,23 @@
 @{
     ViewBag.Title = "Not Done ToDo";
 }
+<style>
+    td {
+        border: 1px solid black;
+        text-align:center;
+    }
+
+    .btn {
+       margin-bottom: 5px;
+    }
+    table {
+        margin: 10px;
+    }
+</style>
+
 <h1>Not Done ToDo`s</h1>
 
-<button>@Html.ActionLink("Add Task", "AddTask", "Task")</button>
+<button class="btn">@Html.ActionLink("Add Task", "AddTask", "Task")</button>
 <table>
     <thead>
         <tr>
