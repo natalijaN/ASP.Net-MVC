@@ -1,0 +1,27 @@
+﻿@model AddTaskModel
+@{
+    ViewBag.Title = "Add Task";
+}
+
+<h1>Add Task</h1>
+<h4 style="color:red">@ViewBag.Error</h4>
+<p>Please enter the data to add task.</p>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(x => x.Title)
+    @Html.TextBoxFor(x => x.Title)<br />
+
+    @Html.LabelFor(x => x.Description)
+    @Html.TextBoxFor(x => x.Description)<br />
+
+    @Html.LabelFor(x => x.ImporanceOfTask)
+    @Html.DropDownListFor(x => x.ImporanceOfTask, Html.GetEnumSelectList(Model.ImporanceOfTask.GetType()))<br />
+
+    @Html.LabelFor(x => x.Type)
+    @Html.DropDownListFor(x => x.Type, Html.GetEnumSelectList(Model.Type.GetType()))
+
+    <br /><br />
+    <button type="submit"> Add task </button>
+
+}

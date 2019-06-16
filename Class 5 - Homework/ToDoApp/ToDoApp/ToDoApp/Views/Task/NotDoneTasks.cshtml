@@ -1,0 +1,48 @@
+﻿@model NotDone
+@{
+    ViewBag.Title = "Not Done ToDo";
+}
+<h1>Not Done ToDo`s</h1>
+
+<button>@Html.ActionLink("Add Task", "AddTask", "Task")</button>
+<table>
+    <thead>
+        <tr>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Importance of ToDo</td>
+            <td>Type of ToDo</td>
+            <td>SubTask`s</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var todo in Model.NotDoneTodos)
+        {
+            <tr>
+                <td id="data">@todo.Title</td>
+                <td>@todo.Descrition</td>
+                <td>@todo.ImporanceOfTask</td>
+                <td>@todo.Type</td>
+                <td>
+                    @if (todo.SubTasks == null)
+                    {
+                        <p>No SubTasks</p>
+                    }
+                    else
+                    {
+                        @for (int i = 0; i < todo.SubTasks.Count; i++)
+                        {
+                            @Html.Partial("~/Views/Shared/_SubTaskView.cshtml", todo.SubTasks[i]);
+                        }
+                    }
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+@if (Model.NotDoneTodos.Count() == 0)
+{
+    <p>Congratulations! All to todo`s are done!</p>
+}

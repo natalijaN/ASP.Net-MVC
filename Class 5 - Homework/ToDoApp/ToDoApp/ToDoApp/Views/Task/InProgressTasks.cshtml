@@ -1,0 +1,14 @@
+﻿@model InProgress
+@{
+    ViewBag.Title = "InProgress Tasks";
+}
+<h1>InProgress Tasks</h1>
+
+@foreach (var todo in Model.InProgressTodos)
+{
+    <p>Title: @todo.Title</p>
+    <p>Description: @todo.Descrition</p>
+    <p>Importance Of ToDo: @todo.ImporanceOfTask</p>
+    <p>Type Of ToDo: @todo.Type</p>
+}
+
