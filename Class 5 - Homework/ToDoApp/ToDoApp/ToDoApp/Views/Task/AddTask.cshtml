@@ -21,6 +21,9 @@
     @Html.LabelFor(x => x.Type)
     @Html.DropDownListFor(x => x.Type, Html.GetEnumSelectList(Model.Type.GetType()))<br />
 
+    <label>How many subtasks do you want to add:</label>
+    <input type="number" id="subtasks"/><br />
+
     @Html.LabelFor(x => x.SubTaskTitle)
     @Html.TextBoxFor(x => x.SubTaskTitle)<br />
 
@@ -29,6 +32,7 @@
 
     @Html.LabelFor(x => x.SubStatus)
     @Html.DropDownListFor(x => x.SubStatus, Html.GetEnumSelectList(Model.SubStatus.GetType()))<br />
+
 
     <br /><br />
     <button type="submit"> Add task </button>
