@@ -4,40 +4,31 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ToDoApp.Domain;
+using ToDoApp.Services.Services;
 using ToDoApp.WebApp.Models;
 
 namespace ToDoApp.WebApp.Controllers
 {
     public class HomeController : Controller
     {
+        private IToDoService _todoService;
+        private IUserService _userService;
+        public HomeController(IToDoService todoService, IUserService userService)
+        {
+            _todoService = todoService;
+            _userService = userService;
+        }
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        {        
+            User user = _userService.GetUserById(1);
+            UserStatisticViewModel model = new UserStatisticViewModel()
+            {
+                 FirstName = user.FirstName,
+                 LastName = user.LastName,
+                 AverageFreeTime = user.AverageFreeTime
+            };
+            return View(model);
         }
     }
 }

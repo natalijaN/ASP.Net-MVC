@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ToDoApp.Services.Helpers;
+using ToDoApp.Services.Services;
 
 namespace ToDoApp.WebApp
 {
@@ -30,6 +32,10 @@ namespace ToDoApp.WebApp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddTransient<IToDoService, ToDoService>();
+            services.AddTransient<IUserService, UserService>();
+            // Dependency Injection Module
+            DIRepositoryModule.RegisterRepositories(services);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -53,7 +59,7 @@ namespace ToDoApp.WebApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Task}/{action=Index}/{id?}");
             });
         }
     }

@@ -24,11 +24,12 @@ namespace ToDoApp.DataAccess.Repositories.CacheRepositories
             return CacheDb.Users.FirstOrDefault(u => u.Id == id);
         }
 
-        public void Insert(User entity)
+        public int Insert(User entity)
         {
             CacheDb.UserId++;
             entity.Id = CacheDb.UserId;
             CacheDb.Users.Add(entity);
+            return entity.Id;
         }
 
         public void Update(User entity)

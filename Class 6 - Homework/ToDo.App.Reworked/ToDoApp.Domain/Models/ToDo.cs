@@ -11,7 +11,7 @@ namespace ToDoApp.Domain
         public string Descrition { get; set; }
         public ImporanceOfTask ImporanceOfTask { get; set; }
         public Status Status { get; set; }
-        public TypeOfTodo Type { get; set; }
+        public TypeOfTodo TypeOfToDo { get; set; }
         public List<SubTask> SubTasks { get; set; } = new List<SubTask>();
     }
 }

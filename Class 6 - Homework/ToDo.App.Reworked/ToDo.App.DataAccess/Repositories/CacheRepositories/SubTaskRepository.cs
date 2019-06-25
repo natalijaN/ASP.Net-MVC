@@ -26,11 +26,12 @@ namespace ToDoApp.DataAccess.Repositories.CacheRepositories
             return CacheDb.SubTasks.FirstOrDefault(x => x.Id == id);
         }
 
-        public void Insert(SubTask entity)
+        public int Insert(SubTask entity)
         {
             CacheDb.SubTaskId++;
             entity.Id = CacheDb.SubTaskId;
             CacheDb.SubTasks.Add(entity);
+            return entity.Id;
         }
 
         public void Update(SubTask entity)

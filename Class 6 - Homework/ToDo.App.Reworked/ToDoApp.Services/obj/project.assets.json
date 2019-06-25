@@ -207,6 +207,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "ToDoApp.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "ToDoApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ToDoApp.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToDoApp.DataAccess.dll": {}
+        }
+      },
+      "ToDoApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/ToDoApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToDoApp.Domain.dll": {}
+        }
       }
     }
   },
@@ -680,11 +703,23 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "ToDoApp.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../ToDo.App.DataAccess/ToDoApp.DataAccess.csproj",
+      "msbuildProject": "../ToDo.App.DataAccess/ToDoApp.DataAccess.csproj"
+    },
+    "ToDoApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ToDoApp.Domain/ToDoApp.Domain.csproj",
+      "msbuildProject": "../ToDoApp.Domain/ToDoApp.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "ToDoApp.DataAccess >= 1.0.0",
+      "ToDoApp.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -716,7 +751,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Natalija\\Documents\\GitHub\\ASP.Net-MVC\\Class 6 - Homework\\ToDo.App.Reworked\\ToDo.App.DataAccess\\ToDoApp.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Natalija\\Documents\\GitHub\\ASP.Net-MVC\\Class 6 - Homework\\ToDo.App.Reworked\\ToDo.App.DataAccess\\ToDoApp.DataAccess.csproj"
+            },
+            "C:\\Users\\Natalija\\Documents\\GitHub\\ASP.Net-MVC\\Class 6 - Homework\\ToDo.App.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\Natalija\\Documents\\GitHub\\ASP.Net-MVC\\Class 6 - Homework\\ToDo.App.Reworked\\ToDoApp.Domain\\ToDoApp.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,16 @@
+﻿@model SubTaskViewModel
+
+
+<div class="jumbotron">
+    @using (Html.BeginForm())
+    {
+        <span class="input-group-addon">@Html.Label(expression: $"model.Title")</span>
+        @Html.TextBox($"model.Title", Model.Title, null, new { @class = "form-control" })
+
+        <span class="input-group-addon">@Html.Label(expression: $"model.Descrition")</span>
+        @Html.TextBox($"model.Descrition", Model.Descrition, null, new { @class = "form-control" })
+
+        <span class="input-group-addon">@Html.Label(expression: $"model.Status of SubTask")</span>
+        @Html.DropDownList($"model.SubStatus", Html.GetEnumSelectList(Model.SubStatus.GetType()), new { Model.SubStatus, @class = "form-control" })
+    }
+</div>

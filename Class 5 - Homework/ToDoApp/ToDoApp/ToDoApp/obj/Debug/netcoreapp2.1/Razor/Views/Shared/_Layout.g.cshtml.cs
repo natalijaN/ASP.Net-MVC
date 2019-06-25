@@ -58,7 +58,7 @@ using ToDoApp.Models.ViewModels;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 172, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "980c0889ca5946e98dbd12bbec545975", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0c7f48589194152b152baea99c52f98", async() => {
                 BeginContext(33, 72, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
                 EndContext();
@@ -73,7 +73,7 @@ using ToDoApp.Models.ViewModels;
                 WriteLiteral(" - ToDoApp</title>\r\n    ");
                 EndContext();
                 BeginContext(143, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "00b9f51c6523421f8517a93a7c4902b0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d4c521b31e984baebaca37027dbcdbf8", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -107,7 +107,7 @@ using ToDoApp.Models.ViewModels;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(201, 578, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ec9fbc43a7c4cae9985f64957fb10fb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "782c192ffd324b969769ab0361cac1c4", async() => {
                 BeginContext(207, 69, true);
                 WriteLiteral("\r\n    <header>\r\n        <nav>\r\n            <ul>\r\n                <li>");
                 EndContext();
@@ -162,7 +162,7 @@ Write(RenderBody());
                 WriteLiteral("\r\n    <footer>\r\n        <p>&copy;ToDoApp</p>\r\n        <p>All rights reserved</p>\r\n    </footer>\r\n    ");
                 EndContext();
                 BeginContext(734, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e3b29697d904a5d86487fe55dfb9b6d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c12528a232024a919d97d71408254596", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

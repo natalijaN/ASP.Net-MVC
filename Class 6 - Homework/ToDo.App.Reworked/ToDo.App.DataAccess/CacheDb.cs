@@ -32,7 +32,7 @@ namespace ToDoApp.DataAccess
                 Title = "Basketball Training",
                 ImporanceOfTask = ImporanceOfTask.Medium,
                 Status = Status.InProgress,
-                Type = TypeOfTodo.Hobby
+                TypeOfToDo = TypeOfTodo.Hobby
             };
 
             SubTask workout = new SubTask()
@@ -63,7 +63,7 @@ namespace ToDoApp.DataAccess
                 Title = "Project",
                 ImporanceOfTask = ImporanceOfTask.Important,
                 Status = Status.NotDone,
-                Type =TypeOfTodo.Work,
+                TypeOfToDo = TypeOfTodo.Work,
             };
 
             SubTask analyze = new SubTask()
@@ -95,7 +95,7 @@ namespace ToDoApp.DataAccess
                 Title = "Reading Book",
                 ImporanceOfTask = ImporanceOfTask.Important,
                 Status = Status.Done,
-                Type = TypeOfTodo.Personal,
+                TypeOfToDo = TypeOfTodo.Personal,
             };
 
             SubTask goToLibrary = new SubTask()
