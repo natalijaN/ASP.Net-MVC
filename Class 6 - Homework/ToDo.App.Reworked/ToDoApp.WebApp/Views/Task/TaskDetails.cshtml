@@ -6,6 +6,10 @@
 <div class="jumbotron">
     @using (Html.BeginForm())
     {
+        <div class="hidden">
+            <span class="input-group-addon">@Html.Label(expression: $"model.Id")</span>
+            @Html.TextBox($"model.Id", Model.Id, null, new { @class = "form-control" })
+        </div>
         <div class="row">
             <div class="input-group">
                 <span class="input-group-addon">@Html.Label(expression: $"model.Title")</span>
@@ -14,13 +18,17 @@
         </div>
         <br />
         <div class="row">
-            <div class="input-group col-md-6">
+            <div class="input-group col-md-4">
                 <span class="input-group-addon">@Html.Label(expression: $"model.Imporance of Task")</span>
                 @Html.DropDownList($"model.ImporanceOfTask", Html.GetEnumSelectList(Model.ImporanceOfTask.GetType()), new { Model.ImporanceOfTask, @class = "form-control" })
             </div>
-            <div class="input-group col-md-6">
+            <div class="input-group col-md-4">
                 <span class="input-group-addon">@Html.Label(expression: $"model.Status of Task")</span>
                 @Html.DropDownList($"model.Status", Html.GetEnumSelectList(Model.Status.GetType()), new { Model.ImporanceOfTask, @class = "form-control" })
+            </div>
+            <div class="input-group col-md-4">
+                <span class="input-group-addon">@Html.Label(expression: $"model.Type of Task")</span>
+                @Html.DropDownList($"model.TypeOfTodo", Html.GetEnumSelectList(Model.TypeOfTodo.GetType()), new { Model.TypeOfTodo, @class = "form-control" })
             </div>
         </div>
         <div class="row">
@@ -30,19 +38,19 @@
             </div>
         </div>
         <br />
-        <div class="row">
-            <h2>Subtasks:</h2>
-            @for (int i = 0; i < Model.SubTasks.Count; i++)
-            {
-                <p><b>Subtask no.@(i + 1)</b></p>
-                <div class="input-group">
-                    @Html.Partial("~/Views/Shared/_SubTaskDetailViewModel.cshtml", Model.SubTasks[i])
-                </div>
-            }
-        </div>   
+        @*<div class="row">
+                <h2>Subtasks:</h2>
+                @for (int i = 0; i < Model.SubTasks.Count; i++)
+                {
+                    <p><b>Subtask no.@(i + 1)</b></p>
+                    <div class="input-group">
+                        @Html.Partial("~/Views/Shared/_SubTaskDetailViewModel.cshtml", Model.SubTasks[i])
+                    </div>
+                }
+            </div>*@
         <div class="row center-block">
-            <input type="submit" value="Save Changes" />
+            <button class="btn btn-danger" type="submit">Save Changes</button>
         </div>
-     }
+    }
 </div>
 

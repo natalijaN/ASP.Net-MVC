@@ -4,6 +4,10 @@
 <div class="jumbotron">
     @using (Html.BeginForm())
     {
+        <div class="hidden">
+            <span class="input-group-addon">@Html.Label(expression: $"model.Id")</span>
+            @Html.TextBox($"model.Id", Model.Id, null, new { @class = "form-control" })
+        </div>
         <span class="input-group-addon">@Html.Label(expression: $"model.Title")</span>
         @Html.TextBox($"model.Title", Model.Title, null, new { @class = "form-control" })
 

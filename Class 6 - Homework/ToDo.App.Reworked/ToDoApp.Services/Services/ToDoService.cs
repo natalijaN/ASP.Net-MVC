@@ -46,5 +46,10 @@ namespace ToDoApp.Services.Services
         {
             return _toDoRepository.GetById(id);
         }
+
+        public void UpdateTask(ToDo todo)
+        {
+             _toDoRepository.Update(todo);
+        }
     }
 }

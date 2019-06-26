@@ -179,6 +179,7 @@ namespace ToDoApp.WebApp.Controllers
             return View(model);
         }
 
+        [HttpGet]
         public IActionResult TaskDetails(int id)
         {
             ToDo todo = _todoService.GetToDoById(id);
@@ -195,6 +196,7 @@ namespace ToDoApp.WebApp.Controllers
             }
             TaskDetailsViewModel taskDetail = new TaskDetailsViewModel()
             {
+                Id = todo.Id,
                 Title = todo.Title,
                 Descrition = todo.Descrition,
                 ImporanceOfTask = todo.ImporanceOfTask,
@@ -204,12 +206,33 @@ namespace ToDoApp.WebApp.Controllers
             return View(taskDetail);
         }
 
-        [HttpPost, ActionName("TaskDetails")]
-        [ValidateAntiForgeryToken]
-        public IActionResult TaskDetails(int? id)
+        [HttpPost]
+        public IActionResult TaskDetails(TaskDetailsViewModel model)
         {
+            //List<SubTask> subtasks = _todoService.GetAllSubTasks().ToList();
 
-            return RedirectToAction("TaskDetails");
+            //foreach (var item in model.SubTasks)
+            //{
+            //    foreach (var sub in subtasks)
+            //    {
+            //        if (item.Id == sub.Id)
+            //        {
+            //            sub.Title = item.Title;
+            //            sub.Descrition = item.Descrition;
+            //            sub.SubStatus = item.SubStatus;
+            //        }
+            //    }
+            //}
+            ToDo todo = _todoService.GetAllToDos().SingleOrDefault(t => t.Id == model.Id);
+            todo.Title = model.Title;
+            todo.Descrition = model.Descrition;
+            todo.ImporanceOfTask = model.ImporanceOfTask;
+            todo.Status = model.Status;
+            todo.TypeOfToDo = model.TypeOfTodo;
+            //todo.SubTasks = subtasks;
+
+            _todoService.UpdateTask(todo);
+            return View("_ThankYou");
         }
     }
 }
