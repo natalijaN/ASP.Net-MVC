@@ -180,6 +180,7 @@ namespace ToDoApp.WebApp.Controllers
         }
 
         [HttpGet]
+        [Route("Task/TaskDetails/{id}")]
         public IActionResult TaskDetails(int id)
         {
             ToDo todo = _todoService.GetToDoById(id);
@@ -207,31 +208,41 @@ namespace ToDoApp.WebApp.Controllers
         }
 
         [HttpPost]
+        [Route("Task/TaskDetails/{model}")]
         public IActionResult TaskDetails(TaskDetailsViewModel model)
         {
-            //List<SubTask> subtasks = _todoService.GetAllSubTasks().ToList();
-
-            //foreach (var item in model.SubTasks)
-            //{
-            //    foreach (var sub in subtasks)
-            //    {
-            //        if (item.Id == sub.Id)
-            //        {
-            //            sub.Title = item.Title;
-            //            sub.Descrition = item.Descrition;
-            //            sub.SubStatus = item.SubStatus;
-            //        }
-            //    }
-            //}
+            
             ToDo todo = _todoService.GetAllToDos().SingleOrDefault(t => t.Id == model.Id);
             todo.Title = model.Title;
             todo.Descrition = model.Descrition;
             todo.ImporanceOfTask = model.ImporanceOfTask;
             todo.Status = model.Status;
             todo.TypeOfToDo = model.TypeOfTodo;
-            //todo.SubTasks = subtasks;
+            
+            List<SubTaskViewModel> subtasksViewModel = new List<SubTaskViewModel>();
+
+            foreach (var st in model.SubTasks)
+            {
+                subtasksViewModel.Add(st);
+            }
+
+            List<SubTask> subtasks = new List<SubTask>();
+
+            foreach (var stv in subtasksViewModel)
+            {
+                subtasks.Add(new SubTask()
+                {
+                    Id = stv.Id,
+                    Title = stv.Title,
+                    Descrition = stv.Descrition,
+                    SubStatus = stv.SubStatus
+                });
+            }
+
+            todo.SubTasks = subtasks;
 
             _todoService.UpdateTask(todo);
+
             return View("_ThankYou");
         }
     }
