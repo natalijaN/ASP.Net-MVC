@@ -47,7 +47,8 @@ namespace ToDoApp.DataAccess
                     Title = "Basketball Training",
                     ImporanceOfTask = ImporanceOfTask.Medium,
                     Status = Status.InProgress,
-                    TypeOfToDo = TypeOfTodo.Hobby
+                    TypeOfToDo = TypeOfTodo.Hobby,
+                    UserId = 1
                },
                new ToDo()
                {
@@ -55,7 +56,8 @@ namespace ToDoApp.DataAccess
                     Title = "Project",
                     ImporanceOfTask = ImporanceOfTask.Important,
                     Status = Status.NotDone,
-                    TypeOfToDo = TypeOfTodo.Work
+                    TypeOfToDo = TypeOfTodo.Work,
+                    UserId = 1
                 },
                 new ToDo()
                 {
@@ -63,7 +65,8 @@ namespace ToDoApp.DataAccess
                     Title = "Reading Book",
                     ImporanceOfTask = ImporanceOfTask.Important,
                     Status = Status.Done,
-                    TypeOfToDo = TypeOfTodo.Personal
+                    TypeOfToDo = TypeOfTodo.Personal,
+                    UserId = 1
                 }
                 );
                 modelBuilder.Entity<SubTask>()
