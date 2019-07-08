@@ -25,10 +25,6 @@ namespace ToDoApp.DataAccess
                 .HasMany(x => x.SubTasks)
                 .WithOne(x => x.ToDo)
                 .HasForeignKey(x => x.SubTaskID);
-             modelBuilder.Entity<SubTask>()
-                .HasMany(x => x.ToDos)
-                .WithOne(x => x.SubTask)
-                .HasForeignKey(x => x.toDoID);
              modelBuilder.Entity<User>()
                 .HasData(
                 new User()
