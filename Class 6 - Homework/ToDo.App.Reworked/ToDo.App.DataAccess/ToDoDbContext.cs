@@ -72,41 +72,48 @@ namespace ToDoApp.DataAccess
                     Id = 1,
                     Title = "Workout",
                     Descrition = "Workout before Training",
-                    SubStatus = SubStatus.NotDone
+                    SubStatus = SubStatus.NotDone,
+                    ToDoId = 1
                 },
                  new SubTask()
                 {
                     Id = 2,
                     Title = "Spa",
                     Descrition = "Spa after Training",
-                    SubStatus = SubStatus.NotDone
+                    SubStatus = SubStatus.NotDone,
+                    ToDoId = 1
                 },
                 new SubTask()
                 {
                     Id = 3,
                     Title = "Analyze",
                     Descrition = "Analyze Data",
-                    SubStatus = SubStatus.Done
+                    SubStatus = SubStatus.Done,
+                    ToDoId = 2
                 },
                 new SubTask()
                 {
                     Id = 4,
                     Title = "Design",
                     Descrition = "Design Engine",
-                    SubStatus = SubStatus.NotDone
+                    SubStatus = SubStatus.NotDone,
+                    ToDoId = 2
                 },
                 new SubTask()
                 {
                     Id = 5,
                     Title = "Go to the library",
                     Descrition = "Go to the library",
-                    SubStatus = SubStatus.Done
+                    SubStatus = SubStatus.Done,
+                    ToDoId = 3
                 },
                 new SubTask()
                 {
                     Id = 6,
                     Title = "ReadTheBook",
-                    SubStatus = SubStatus.NotDone
+                    Descrition = "You need to start reading the book",
+                    SubStatus = SubStatus.NotDone,
+                    ToDoId = 3
                 }
                 );
       }
