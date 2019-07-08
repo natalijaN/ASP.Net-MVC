@@ -1,0 +1,26 @@
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.csprojAssemblyReference.cache
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.AssemblyInfo.cs
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.deps.json
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.pdb
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.Domain.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.Domain.pdb
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.csproj.CopyComplete
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.deps.json
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.dll
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.Domain.dll
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.Domain.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.csprojAssemblyReference.cache
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.csproj.CoreCompileInputs.cache
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.AssemblyInfoInputs.cache
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.AssemblyInfo.cs
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.csproj.CopyComplete
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.dll
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\obj\Debug\netcoreapp2.1\ToDoApp.DataAccess.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.runtimeconfig.json
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDo.App.DataAccess\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.runtimeconfig.dev.json

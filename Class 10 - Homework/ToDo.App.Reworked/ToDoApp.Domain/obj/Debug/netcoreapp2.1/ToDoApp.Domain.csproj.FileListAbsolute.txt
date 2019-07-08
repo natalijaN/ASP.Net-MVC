@@ -1,0 +1,16 @@
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\bin\Debug\netcoreapp2.1\ToDoApp.Domain.deps.json
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\bin\Debug\netcoreapp2.1\ToDoApp.Domain.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\bin\Debug\netcoreapp2.1\ToDoApp.Domain.pdb
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.AssemblyInfo.cs
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\bin\Debug\netcoreapp2.1\ToDoApp.Domain.deps.json
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\bin\Debug\netcoreapp2.1\ToDoApp.Domain.dll
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\bin\Debug\netcoreapp2.1\ToDoApp.Domain.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.csproj.CoreCompileInputs.cache
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.AssemblyInfoInputs.cache
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.AssemblyInfo.cs
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.dll
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Domain\obj\Debug\netcoreapp2.1\ToDoApp.Domain.pdb

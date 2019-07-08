@@ -1,0 +1,30 @@
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.csprojAssemblyReference.cache
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.csproj.CoreCompileInputs.cache
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.AssemblyInfoInputs.cache
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.AssemblyInfo.cs
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Services.deps.json
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Services.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Services.pdb
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Domain.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.pdb
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Domain.pdb
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.csproj.CopyComplete
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.dll
+C:\Users\Natalija\Documents\GitHub\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Services.deps.json
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Services.dll
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Services.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.dll
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Domain.dll
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.DataAccess.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\bin\Debug\netcoreapp2.1\ToDoApp.Domain.pdb
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.csprojAssemblyReference.cache
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.csproj.CoreCompileInputs.cache
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.AssemblyInfoInputs.cache
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.AssemblyInfo.cs
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.csproj.CopyComplete
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.dll
+E:\web development\ASP.Net MVC\homework\ASP.Net-MVC\Class 6 - Homework\ToDo.App.Reworked\ToDoApp.Services\obj\Debug\netcoreapp2.1\ToDoApp.Services.pdb

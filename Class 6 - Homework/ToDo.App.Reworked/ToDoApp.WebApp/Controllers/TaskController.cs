@@ -209,27 +209,26 @@ namespace ToDoApp.WebApp.Controllers
         [HttpPost]
         public IActionResult TaskDetails(TaskDetailsViewModel model)
         {
-            //List<SubTask> subtasks = _todoService.GetAllSubTasks().ToList();
+            List<SubTask> subtasks = new List<SubTask>();
 
-            //foreach (var item in model.SubTasks)
-            //{
-            //    foreach (var sub in subtasks)
-            //    {
-            //        if (item.Id == sub.Id)
-            //        {
-            //            sub.Title = item.Title;
-            //            sub.Descrition = item.Descrition;
-            //            sub.SubStatus = item.SubStatus;
-            //        }
-            //    }
-            //}
+            foreach (var subTaskModel in model.SubTasks)
+            {
+                subtasks.Add(new SubTask()
+                {
+                    //Id = subTaskModel.Id,
+                    Title = subTaskModel.Title,
+                    Descrition = subTaskModel.Descrition,
+                    SubStatus = subTaskModel.SubStatus
+                });
+            }
+
             ToDo todo = _todoService.GetAllToDos().SingleOrDefault(t => t.Id == model.Id);
             todo.Title = model.Title;
             todo.Descrition = model.Descrition;
             todo.ImporanceOfTask = model.ImporanceOfTask;
             todo.Status = model.Status;
             todo.TypeOfToDo = model.TypeOfTodo;
-            //todo.SubTasks = subtasks;
+            todo.SubTasks = subtasks;
 
             _todoService.UpdateTask(todo);
             return View("_ThankYou");
