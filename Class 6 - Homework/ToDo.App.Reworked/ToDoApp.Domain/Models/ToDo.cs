@@ -12,6 +12,8 @@ namespace ToDoApp.Domain
         public ImporanceOfTask ImporanceOfTask { get; set; }
         public Status Status { get; set; }
         public TypeOfTodo TypeOfToDo { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
         public List<SubTask> SubTasks { get; set; } = new List<SubTask>();
     }
 }

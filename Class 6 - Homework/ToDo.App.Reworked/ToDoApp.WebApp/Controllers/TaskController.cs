@@ -180,6 +180,7 @@ namespace ToDoApp.WebApp.Controllers
         }
 
         [HttpGet]
+        [Route("Task/TaskDetails/{id}")]
         public IActionResult TaskDetails(int id)
         {
             ToDo todo = _todoService.GetToDoById(id);
@@ -207,8 +208,10 @@ namespace ToDoApp.WebApp.Controllers
         }
 
         [HttpPost]
+        [Route("Task/TaskDetails/{model}")]
         public IActionResult TaskDetails(TaskDetailsViewModel model)
         {
+<<<<<<< HEAD
             List<SubTask> subtasks = new List<SubTask>();
 
             foreach (var subTaskModel in model.SubTasks)
@@ -222,15 +225,43 @@ namespace ToDoApp.WebApp.Controllers
                 });
             }
 
+=======
+            
+>>>>>>> 74638eebed8e844265e98f15ef48337a5f7f8ed7
             ToDo todo = _todoService.GetAllToDos().SingleOrDefault(t => t.Id == model.Id);
             todo.Title = model.Title;
             todo.Descrition = model.Descrition;
             todo.ImporanceOfTask = model.ImporanceOfTask;
             todo.Status = model.Status;
             todo.TypeOfToDo = model.TypeOfTodo;
+<<<<<<< HEAD
+=======
+            
+            List<SubTaskViewModel> subtasksViewModel = new List<SubTaskViewModel>();
+
+            foreach (var st in model.SubTasks)
+            {
+                subtasksViewModel.Add(st);
+            }
+
+            List<SubTask> subtasks = new List<SubTask>();
+
+            foreach (var stv in subtasksViewModel)
+            {
+                subtasks.Add(new SubTask()
+                {
+                    Id = stv.Id,
+                    Title = stv.Title,
+                    Descrition = stv.Descrition,
+                    SubStatus = stv.SubStatus
+                });
+            }
+
+>>>>>>> 74638eebed8e844265e98f15ef48337a5f7f8ed7
             todo.SubTasks = subtasks;
 
             _todoService.UpdateTask(todo);
+
             return View("_ThankYou");
         }
     }
