@@ -10,5 +10,7 @@ namespace ToDoApp.Domain
         public string Title { get; set; }
         public string Descrition { get; set; }
         public SubStatus SubStatus { get; set; }
+        public int ToDoId { get; set; }
+        public ToDo Todo { get; set; }
     }
 }
