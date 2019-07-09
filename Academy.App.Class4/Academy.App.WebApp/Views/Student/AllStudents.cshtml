@@ -1,0 +1,23 @@
+﻿@model ShowAllStudents
+@{
+    ViewBag.Title = "All Students";
+}
+
+<div class="jumbotron">
+    <h2>AllStudents</h2>
+    @for( int i = 0; i < Model.Students.Count; i++)
+    {
+    <div>
+        <h3>Student: @Model.Students[i].FirstName @Model.Students[i].LastName</h3>
+        <p>Age: @Model.Students[i].Age</p>
+        <p>Academy: @Model.Students[i].Academy</p>
+        @for (int j = 0; j < Model.Students[i].Projects.Count; j++)
+        {
+            <h4>Project Title: @Model.Students[i].Projects[j].Title</h4>
+            <p>Estimated Time: @Model.Students[i].Projects[j].EstimatedTime</p>
+            <p>Time Spent: @Model.Students[i].Projects[j].TimeSpent</p>
+        }
+    </div>
+    }
+</div>
+

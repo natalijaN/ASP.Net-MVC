@@ -1,0 +1,37 @@
+﻿@model AddStudent
+@{
+    ViewData["Title"] = "Add Student";
+}
+
+<h2>AddStudent</h2>
+
+@using (Html.BeginForm())
+{
+<div class="row">
+    <div class="col-md-3">
+        <div class="input-group input-group-md">
+            <span class="input-group-addon">@Html.Label(expression: $"model.FirstName")</span>
+            @Html.TextBox($"model.FirstName", Model.FirstName, null, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="input-group input-group-md">
+            <span class="input-group-addon">@Html.Label(expression: $"model.LastName")</span>
+            @Html.TextBox($"model.LastName", Model.LastName, null, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="input-group input-group-md">
+            <span class="input-group-addon">@Html.Label(expression: $"model.Age")</span>
+            @Html.TextBox($"model.Age", Model.Age, null, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="input-group input-group-md">
+            <span class="input-group-addon">@Html.Label(expression: $"model.Academy")</span>
+            @Html.DropDownList($"model.Academy", Html.GetEnumSelectList(Model.Academy.GetType()), new { Model.Academy, @class = "form-control" })
+        </div>
+    </div>
+    <button class="btn btn-danger" type="submit"> Add Student </button>
+</div>
+}

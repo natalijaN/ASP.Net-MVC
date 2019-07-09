@@ -1,0 +1,2 @@
+E:\web development\New folder\Class 4\Academy.App.Class4\Academy.App.DataAccess\obj\Debug\Academy.App.DataAccess.csprojAssemblyReference.cache
+E:\web development\New folder\Class 4\Academy.App.Class4\Academy.App.DataAccess\obj\Debug\Academy.App.DataAccess.csproj.CoreCompileInputs.cache
